@@ -8,9 +8,10 @@
 #     3
 #     -> 1
 #
-# size_arrow_A = int(input('Введите количество элементов: '))
-# arr_A = [1N]
-# print(arr_A)
-A = [int(i) for i in input().split()] #заполним список
-X = int(input()) #пользователь вводит число, количество вхождений которого нужно подсчитать
-print(A.count(X)) #выводим количество вхождений числа X в список A
+import random
+my_list = []
+    for i in range(15):
+    my_list.append(random.randint(0, 10))
+print(my_list)
+number = int(input('Введите искомое число: '))
+print(f'Число {number} встречается в списке {my_list.count(number)} раз')

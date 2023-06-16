@@ -9,8 +9,8 @@
 a = int(input('Введите первое неотрицительное число: '))
 b = int(input('Введите второе неотрицательное число: '))
 def sums(a, b):
-    if a == 0:
-        return b
+    if b == 0:
+        return a
     else:
-        return sums(a-1, b+1)
+        return sums(a+1, b-1)
 print(sums(a, b))

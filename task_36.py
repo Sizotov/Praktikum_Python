@@ -17,7 +17,8 @@
 # 6 12 18 24 30 36
 
 def print_operation_table(operation, num_rows=6, num_columns=6):
-a = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_rows + 1)]
-for i in a:
-print(*[f'{x:>3}' for x in i])
+    func_1 = [[operation(i, j) for i in range(1, num_rows + 1) for j in range(1, num_columns + 1)]]
+for i in func_1:
+    for x in i:
+    print(*[f'{x:>3}'])
 print_operation_table(lambda x, y: x * y)
